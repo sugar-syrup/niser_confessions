@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confessions | NISER</title>
+</head>
+<body>
+    <div>
+        <h1>Confessions</h1>
+    </div>
+    <div class="ConfessionList">
+        {% for confession in confession_list %}
+        <div class="Confession">
+            <h3>To: {{ confession.to }}</h3>
+            <p>{{ confession.confession }}</p>
+            <p>From: {{ confession.from }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confession Form</title>
+</head>
+<body>
+    <h1>Confession Form</h1>
+    <form action="/confess" method="POST">
+        {% csrf_token %}
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required><br><br>
+
+        <label for="from">To:</label>
+        <input type="text" id="from" name="from" required><br><br>
+        
+        <label for="confession">Your Confession:</label><br>
+        <textarea id="confession" name="confession" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
